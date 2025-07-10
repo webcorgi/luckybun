@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>mammoth</title>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+        <script src="../js/jquery-2.2.4.min.js"></script>
+        <script src="../js/script.js"></script>
+
+    </head>
+    <body>
+
+        <div class="popup deposit">
+            <div class="popup__cont">
+                <button class="popup__close">
+                    <img src="../img/popup_close.png" alt="close">
+                </button>
+                <div class="popup__deposit">
+                    <h2>DEPOSIT</h2>
+                    <div class="deposit__tab">
+                        <button class="btn-gradient btn " onclick="location.href='./deposit.html'">Deposit</button>
+                        <button class="btn-gradient btn active" onclick="location.href='./withdraw.html'">Withdraw</button>
+                    </div>
+
+                    <hr class="hr-line" />
+
+                    <div class="amountbox">
+                        <span>Deposit Amount</span>
+                        <b>$ 1,000</b>
+                        <p class="amount__type">USDT</p>
+                    </div>
+
+                    <div class="withdrawal-box">
+                        <div class="no-withdrawal">
+                            <img src="../img/no.png" alt="no withdrawal">
+                            <h3>No withdrawal</h3>
+                            <h4>Withdrawal is temporarily unavailable. Withdrawal amount <b>$0</b></h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="popup__bg"></div>
+        </div>
+
+        <!-- 햄버거 메뉴 버튼 -->
+        <button class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- 네비게이션 오버레이 -->
+        <div class="nav-overlay"></div>
+        
+        <div class="container">
+            <nav>
+                <h1>
+                    <a href="./index.html">
+                        <img src="../img/logo.png" alt="logo">
+                    </a>
+                </h1>
+                <ul>
+                    <li>
+                        <a href="./holdem.html">
+                            <img src="../img/ico_home.png" alt="home">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./plo.html">
+                            <img src="../img/ico_holdem.png" alt="holdem">
+                            <span>Hold 'em</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./tournament.html">
+                            <img src="../img/ico_plo.png" alt="plo">
+                            <span>PLO (OMAHA)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./howtoplay.html">
+                            <img src="../img/ico_tournament.png" alt="tournament">
+                            <span>Tournament</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./howtoplay.html">
+                            <img src="../img/ico_howtoplay.png" alt="howtoplay">
+                            <span>How to Play</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./news.html">
+                            <img src="../img/ico_news.png" alt="news">
+                            <span>News</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="contents">
+                <div class="contents__header">
+                    <div class="contents__header__left">
+                        <div class="onlineuser">
+                            <img src="../img/ico_user.png" alt="user">
+                            <span class="c_green">57,489</span>
+                            <span>Online</span>
+                        </div>
+                        <div class="dailyperks">
+                            <img src="../img/ico_gift.png" alt="dailyperks">
+                            <span>Daily Perks</span>
+                        </div>
+                    </div>
+                    <div class="contents__header__right">
+                        <div class="fakeselect__flag">
+                            <button>
+                                <img src="../img/ico_eng.png" alt="select">
+                                <span>Eng</span>
+                            </button>
+                            <div class="fakeselect__flag__list">
+                                <ul>
+                                    <li>
+                                        <button>
+                                            <img src="../img/ico_eng.png" alt="eng">
+                                            <span>Eng</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            <img src="../img/ico_kor.png" alt="kor">
+                                            <span>Kor</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="btn btn-signup">SIGN UP</a>
+                        <a href="javascript:;" class="btn btn-gradient btn-login">LOGIN</a>
+                    </div>
+                </div>
+                <div class="contents__main">
+                    <div class="main__visual">
+                        <div class="visual_contents">
+                            <h2>Where Luck<br/>
+                                Meets Fun!</h2>
+                            <p>Your go-to spot for classic poker, slots, roulette, and more.<br />
+                                We’re all about fun, excitement, and great gaming!</p>
+                            <a href="javascript:;" class="btn-register">REGISTER NOW!</a>
+                        </div>
+                        <img src="../img/main_visual.jpg" alt="where Lick Meets Fun!">
+                    </div>
+                    <div class="main__step">
+                        <div class="step__item">
+                            <img src="../img/step1.png" alt="step1">
+                        </div>
+                        <div class="step__item">
+                            <img src="../img/step2.png" alt="step2">
+                        </div>
+                        <div class="step__item">
+                            <img src="../img/step3.png" alt="step3">
+                        </div>
+                    </div>
+                    <h2 class="main__reasons__title">Reasons to choose Lucky Bun</h2>
+                    <div class="main__reasons">
+                        <div class="reasons__item">
+                            <img src="../img/main_reasons1.png" alt="reason1">
+                        </div>
+                        <div class="reasons__item">
+                            <img src="../img/main_reasons2.png" alt="reason2">
+                        </div>
+                        <div class="reasons__item">
+                            <img src="../img/main_reasons3.png" alt="reason3">
+                        </div>
+                        <div class="reasons__item">
+                            <img src="../img/main_reasons4.png" alt="reason4">
+                        </div>
+                    </div>
+                    <img src="../img/main_about.png" alt="about online holdem" class="main__about-img">
+                    <img src="../img/main_intersite.png" alt="intersite competition" class="main__intersite-img">
+                    <img src="../img/main_experience.jpg" alt="experience" class="main__experience-img">
+                    <img src="../img/main_stay.png" alt="stay" class="main__stay-img">
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class="footer__top">
+                <div class="footer__logos">
+                    <a href="javascript:;">
+                        <img src="../img/logo.png" alt="LUCKY BUN POKER">
+                    </a>
+                    <div class="sns">
+                        <a href="javascript:;">
+                            <img src="../img/ico_facebook.png" alt="facebook">
+                        </a>
+                        <a href="javascript:;">
+                            <img src="../img/ico_insta.png" alt="instagram">
+                        </a>
+                        <a href="javascript:;">
+                            <img src="../img/ico_x.png" alt="x">
+                        </a>
+                        <a href="javascript:;">
+                            <img src="../img/ico_mail.png" alt="mail">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__details">
+                    <p>Lucky Bun is your premier online casino destination, offering a secure and exciting gaming experience 24/7. With a wide selection of games, fair play powered by advanced technology, and nonstop rewards, we bring the thrill of the casino straight to your screen. Join today and discover a world where luck meets entertainment.</p>
+                </div>
+                <div class="footer__nav">
+                    <a href="./index.html">
+                        <span>Home</span>
+                    </a>
+                    <a href="./holdem.html">
+                        <span>Hold 'em</span>
+                    </a>
+                    <a href="./plo.html">
+                        <span>PLO (OMAHA)</span>
+                    </a>
+                    <a href="./Tournament.html">
+                        <span>Tournament</span>
+                    </a>
+                    <a href="./howtoplay.html">
+                        <span>How to Play</span>
+                    </a>
+                    <a href="./news.html">
+                        <span>News</span>
+                    </a>
+                </div>
+                <div class="footer__links">
+                    <a href="javascript:;">
+                        <span>About Online Hold ‘em</span>
+                    </a>
+                    <a href="javascript:;">
+                        <span>Advanced RNG System</span>
+                    </a>
+                    <a href="javascript:;">
+                        <span>Inter-site Competition</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__btm">
+                <p>ⓒ 2025 Lucky Bun</p>
+            </div>
+        </footer>
+    </body>
+</html>

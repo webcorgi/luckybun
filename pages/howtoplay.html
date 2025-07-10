@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>mammoth</title>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+        <script src="../js/jquery-2.2.4.min.js"></script>
+        <script src="../js/script.js"></script>
+
+    </head>
+    <body>
+        <!-- 햄버거 메뉴 버튼 -->
+        <button class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- 네비게이션 오버레이 -->
+        <div class="nav-overlay"></div>
+        
+        <div class="container">
+            <nav>
+                <h1>
+                    <a href="./index.html">
+                        <img src="../img/logo.png" alt="logo">
+                    </a>
+                </h1>
+                <ul>
+                    <li>
+                        <a href="./holdem.html">
+                            <img src="../img/ico_home.png" alt="home">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./plo.html">
+                            <img src="../img/ico_holdem.png" alt="holdem">
+                            <span>Hold 'em</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./tournament.html">
+                            <img src="../img/ico_plo.png" alt="plo">
+                            <span>PLO (OMAHA)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./howtoplay.html">
+                            <img src="../img/ico_tournament.png" alt="tournament">
+                            <span>Tournament</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./howtoplay.html">
+                            <img src="../img/ico_howtoplay.png" alt="howtoplay">
+                            <span>How to Play</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./news.html">
+                            <img src="../img/ico_news.png" alt="news">
+                            <span>News</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="contents">
+                <div class="contents__header">
+                    <div class="contents__header__left">
+                        <div class="onlineuser">
+                            <img src="../img/ico_user.png" alt="user">
+                            <span class="c_green">57,489</span>
+                            <span>Online</span>
+                        </div>
+                        <div class="dailyperks">
+                            <img src="../img/ico_gift.png" alt="dailyperks">
+                            <span>Daily Perks</span>
+                        </div>
+                    </div>
+                    <div class="contents__header__right">
+                        <div class="fakeselect__flag">
+                            <button>
+                                <img src="../img/ico_eng.png" alt="select">
+                                <span>Eng</span>
+                            </button>
+                            <div class="fakeselect__flag__list">
+                                <ul>
+                                    <li>
+                                        <button>
+                                            <img src="../img/ico_eng.png" alt="eng">
+                                            <span>Eng</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            <img src="../img/ico_kor.png" alt="kor">
+                                            <span>Kor</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="btn btn-signup">SIGN UP</a>
+                        <a href="javascript:;" class="btn btn-gradient btn-login">LOGIN</a>
+                    </div>
+                </div>
+                <div class="contents__how">
+                    <img src="../img/how_banner.png" alt="HOW TO PLAY TEXAS HOLD ‘EM?" class="howtoplay__banner">
+
+                    <div class="how__info">
+                        <div class="infoitem how__title infoitem-1">
+                            <h2 class="infoitem__title">
+                                GAME OBJECTIVE
+                            </h2>
+                            <p>The player aims to make the best 5- card poker hand using their 2 private cards (Hole Cards) and 5 shared cards (Community Cards).</p>
+                        </div>
+                        <div class="infoitem how__title infoitem-2">
+                            <h2 class="infoitem__title">
+                                CARD CONFIGURATION
+                            </h2>
+                            <table class="infoitem__table">
+                                <tr>
+                                    <th>Hole Cards</th>
+                                    <td>
+                                        2 private cards<br>
+                                        visible only to the player.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Community Cards</th>
+                                    <td>
+                                        5 shared cards<br>
+                                        dealt face-up in the center
+                                        of the table.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Flop</th>
+                                    <td>3 cards</td>
+                                </tr>
+                                <tr>
+                                    <th>Turn</th>
+                                    <td>1 card</td>
+                                </tr>
+                                <tr>
+                                    <th>River</th>
+                                    <td>1 card</td>
+                                </tr>
+                                <tr>
+                                    <th>Showdown</th>
+                                    <td>Remaining players
+                                        reveal cards, best hand
+                                        wins the pot.</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="infoitem how__title infoitem-3">
+                            <h2 class="infoitem__title">
+                                GAME OBJECTIVE
+                            </h2>
+                            <table class="infoitem__table">
+                                <tr>
+                                    <th>STAGE</th>
+                                    <td>DESCRIPTION</td>
+                                </tr>
+                                <tr>
+                                    <th>Pre-flop</th>
+                                    <td>Each player is dealt their 2 Hole Cards, first betting round.</td>
+                                </tr>
+                                <tr>
+                                    <th>Flop</th>
+                                    <td>3 Community Cards are revealed, second betting.</td>
+                                </tr>
+                                <tr>
+                                    <th>Turn</th>
+                                    <td>1 Community Card is revealed, third betting.</td>
+                                </tr>
+                                <tr>
+                                    <th>River</th>
+                                    <td>Final Community Card is revealed, final betting.</td>
+                                </tr>
+                                <tr>
+                                    <th>Showdown</th>
+                                    <td>Remaining players reveal cards, best hand wins pot.</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div><!-- // how__info -->
+                    <div class="handrankings">
+                        <div class="how__title__wrap">
+                            <h2 class="how__title">
+                                <b>HAND RANKINGS</b>
+                                <span>(STRONGEST TO WEAKEST)</span>
+                            </h2>
+                        </div>
+                        <div class="handrankings__list">
+                            <div class="handrankings__item">
+                                <img src="../img/royal_flush.png" alt="card">
+                                <h3>Royal Flush</h3>
+                                <p>Poker’s most famous hand, a royal flush, cannot be beaten. It consists of the ace, king, queen, jack and ten of a single suit.</p>
+                            </div>
+                            <div class="handrankings__item">
+                                <img src="../img/straight_flush.png" alt="card">
+                                <h3>Straight Flush</h3>
+                                <p>Five cards in sequence, of the same suit. In the event of a tie, the highest rank at the top of the sequence wins.</p>
+                            </div>
+                            <div class="handrankings__item">
+                                <img src="../img/four_of_a_kind.png" alt="card">
+                                <h3>Four of a Kind</h3>
+                                <p>Four cards of the same rank, and one side card or ‘kicker’. In the event of a tie, the player with the highest side card (‘kicker’) wins.</p>
+                            </div>
+                            <div class="handrankings__item">
+                                <img src="../img/full_house.png" alt="card">
+                                <h3>Full House</h3>
+                                <p>Three cards of the same rank, and two cards of a different, matching rank. In the event of a tie, the highest three matching cards wins.</p>
+                            </div>
+                            <div class="handrankings__item">
+                                <img src="../img/flush.png" alt="card">
+                                <h3>Flush</h3>
+                                <p>Five cards of the same suit, not in sequence. In the event of a tie, the player holding the highest ranked card wins.</p>
+                            </div>
+                            <div class="handrankings__item">
+                                <img src="../img/straight.png" alt="card">
+                                <h3>Straight</h3>
+                                <p>Five non-suited cards in sequence. In the event of a tie, the highest ranking card at the top of the sequence wins.</p>
+                            </div>
+                            <div class="handrankings__item">
+                                <img src="../img/three_of_a_kind.png" alt="card">
+                                <h3>Three of a Kind</h3>
+                                <p>Three cards of the same rank, and two unrelated side cards. In the event of a tie, the player with the highest, and if necessary, second-highest side card (‘kicker’) wins.</p>
+                            </div>
+                            <div class="handrankings__item">
+                                <img src="../img/two_pair.png" alt="card">
+                                <h3>Two Pair</h3>
+                                <p>Two cards of matching rank, two cards of different matching rank, and one kicker. If both players have an identical Two Pair, the highest kicker wins.</p>
+                            </div>
+                            <div class="handrankings__item">
+                                <img src="../img/one_pair.png" alt="card">
+                                <h3>One Pair</h3>
+                                <p>Two cards of matching rank, and three unrelated side cards. In the event of a tie, the player with the highest, and if necessary, second or third-highest side card wins.</p>
+                            </div>
+                            <div class="handrankings__item">
+                                <img src="../img/high_card.png" alt="card">
+                                <h3>High Card</h3>
+                                <p>Any hand that does not qualify under the categories listed. In the event of a tie, the highest card wins, such as ‘ace-high’.</p>
+                            </div>
+                        </div>
+                    </div><!-- // handrankings -->
+
+                    <div class="how__info how__info-2">
+                        <div class="infoitem how__title infoitem-1">
+                            <h2 class="infoitem__title">
+                                BETTING OPTIONS
+                            </h2>
+                            <table class="infoitem__table infoitem__table-2">
+                                <tr>
+                                    <th>Fold</th>
+                                    <td>Forfeit your hand</td>
+                                </tr>
+                                <tr>
+                                    <th>Call</th>
+                                    <td>Match the current bet</td>
+                                </tr>
+                                <tr>
+                                    <th>Raise</th>
+                                    <td>Increase the bet</td>
+                                </tr>
+                                <tr>
+                                    <th>Check</th>
+                                    <td>Pass the action<br>
+                                        (If no bet)</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="infoitem how__title infoitem-2">
+                            <h2 class="infoitem__title">
+                                TIPS & STRATEGY
+                            </h2>
+                            <ul class="infoitem__list">
+                                <li>Selecting good starting hands is important (AA, KK, AK)</li>
+                                <li>Pay attention to opponents. patterns and betting behavior</li>
+                                <li>Use probability-based, not emption-based, decision making</li>
+                            </ul>
+                        </div>
+                    </div><!-- // how__info-2 -->
+                </div><!-- // contents__how -->
+            </div><!-- // contents -->
+        </div><!-- // container -->
+
+
+        <footer>
+            <div class="footer__top">
+                <div class="footer__logos">
+                    <a href="javascript:;">
+                        <img src="../img/logo.png" alt="LUCKY BUN POKER">
+                    </a>
+                    <div class="sns">
+                        <a href="javascript:;">
+                            <img src="../img/ico_facebook.png" alt="facebook">
+                        </a>
+                        <a href="javascript:;">
+                            <img src="../img/ico_insta.png" alt="instagram">
+                        </a>
+                        <a href="javascript:;">
+                            <img src="../img/ico_x.png" alt="x">
+                        </a>
+                        <a href="javascript:;">
+                            <img src="../img/ico_mail.png" alt="mail">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__details">
+                    <p>Lucky Bun is your premier online casino destination, offering a secure and exciting gaming experience 24/7. With a wide selection of games, fair play powered by advanced technology, and nonstop rewards, we bring the thrill of the casino straight to your screen. Join today and discover a world where luck meets entertainment.</p>
+                </div>
+                <div class="footer__nav">
+                    <a href="./index.html">
+                        <span>Home</span>
+                    </a>
+                    <a href="./holdem.html">
+                        <span>Hold 'em</span>
+                    </a>
+                    <a href="./plo.html">
+                        <span>PLO (OMAHA)</span>
+                    </a>
+                    <a href="./Tournament.html">
+                        <span>Tournament</span>
+                    </a>
+                    <a href="./howtoplay.html">
+                        <span>How to Play</span>
+                    </a>
+                    <a href="./news.html">
+                        <span>News</span>
+                    </a>
+                </div>
+                <div class="footer__links">
+                    <a href="javascript:;">
+                        <span>About Online Hold ‘em</span>
+                    </a>
+                    <a href="javascript:;">
+                        <span>Advanced RNG System</span>
+                    </a>
+                    <a href="javascript:;">
+                        <span>Inter-site Competition</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__btm">
+                <p>ⓒ 2025 Lucky Bun</p>
+            </div>
+        </footer>
+    </body>
+</html>
