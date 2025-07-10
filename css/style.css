@@ -1044,7 +1044,7 @@ footer .footer__top {
 }
 
 
-@media screen and (max-width:991px){
+@media screen and (max-width:1180px){
     /* Container 레이아웃 변경 */
     .container {
         flex-direction: column;
