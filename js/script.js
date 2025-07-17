@@ -98,7 +98,7 @@ $(function () {
     });
     
     // Deposit 버튼 클릭 시 deposit 팝업 열기
-    $('.btn-deposit').on('click', function(e) {
+    $('.btn-deposit-popup').on('click', function(e) {
         e.preventDefault();
         $('.popup.deposit').show();
     });
