@@ -15,6 +15,97 @@
 
     </head>
     <body>
+
+        <!-- 로그인 팝업 -->
+        <div class="popup login" style="display: none;">
+            <div class="popup__cont">
+                <button class="popup__close">
+                    <img src="../img/popup_close.png" alt="close">
+                </button>
+                <div class="popup__member">
+                    <div class="member__left">
+                        <img src="../img/logo.png" alt="LUCKY BUN POKER">   
+                    </div>
+                    <div class="member__right">
+                        <p>Sign in to your account, and start winning!</p>
+
+                        <div class="member__input">
+                            <img src="../img/ico_id.png" alt="username">
+                            <input type="text" placeholder="Username" class="input-common">
+                        </div>
+                        <div class="member__input">
+                            <img src="../img/ico_lock.png" alt="Password">
+                            <input type="password" placeholder="Password" class="input-common">
+                        </div>
+                        <a href="javascript:;" class="link-forgot">Forgot Password?</a>
+                        <a href="javascript:;" class="btn btn-gradient btn-popup-login">LOGIN</a>
+                        <div class="member__links">
+                            <span>Don't have an account?</span>
+                            <a href="javascript:;" class="link-signup">SIGN UP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup__bg"></div>
+        </div>
+
+        <!-- 회원가입 팝업 -->
+        <div class="popup signup" style="display: none;">
+            <div class="popup__cont">
+                <button class="popup__close">
+                    <img src="../img/popup_close.png" alt="close">
+                </button>
+                <div class="popup__member">
+                    <div class="member__left">
+                        <img src="../img/logo.png" alt="LUCKY BUN POKER">   
+                    </div>
+                    <div class="member__right">
+                        <p>Join Lucky Bun today and start your winning streak!</p>
+
+                        <div class="member__input">
+                            <img src="../img/ico_name.png" alt="First Name">
+                            <input type="text" placeholder="First Name" class="input-common">
+                        </div>
+                        <div class="member__input">
+                            <img src="../img/ico_name.png" alt="Last Name">
+                            <input type="text" placeholder="Last Name" class="input-common">
+                        </div>
+                        <div class="member__input">
+                            <img src="../img/ico_id.png" alt="username">
+                            <input type="text" placeholder="Username" class="input-common">
+                        </div>
+                        <div class="member__input">
+                            <img src="../img/ico_email.png" alt="Email">
+                            <input type="text" placeholder="Email" class="input-common">
+                        </div>
+                        <div class="member__input">
+                            <img src="../img/ico_lock.png" alt="Password">
+                            <input type="password" placeholder="Password" class="input-common">
+                        </div>
+                        <div class="member__input">
+                            <img src="../img/ico_confirm.png" alt="Confirm Password">
+                            <input type="password" placeholder="Confirm Password" class="input-common">
+                        </div>
+                        <div class="member__input">
+                            <img src="../img/ico_agent.png" alt="Agent Code">
+                            <input type="text" placeholder="Agent Code" class="input-common">
+                        </div>
+                        <label class="member__checkbox">
+                            <input type="checkbox" class="input-checkbox">
+                            <span>I accept the Terms of Use and Privacy Policy</span>
+                        </label>
+                        <a href="javascript:;" class="btn btn-gradient btn-popup-login">SIGN UP</a>
+                        <div class="member__links">
+                            <span>Already have an account?</span>
+                            <a href="javascript:;" class="link-signup">LOG IN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup__bg"></div>
+        </div>
+
+
         <!-- 햄버거 메뉴 버튼 -->
         <button class="menu-toggle">
             <span></span>
@@ -64,7 +155,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:;">
+                        <a href="./news.html">
                             <img src="../img/ico_news.png" alt="news">
                             <span>News</span>
                         </a>

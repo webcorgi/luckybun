@@ -83,4 +83,80 @@ $(function () {
             $(this).parent('label').addClass('active');
         }
     });
+
+    // 팝업 기능
+    // 로그인 버튼 클릭 시 로그인 팝업 열기
+    $('.btn-login').on('click', function(e) {
+        e.preventDefault();
+        $('.popup.login').show();
+    });
+    
+    // 회원가입 버튼 클릭 시 회원가입 팝업 열기
+    $('.btn-signup').on('click', function(e) {
+        e.preventDefault();
+        $('.popup.signup').show();
+    });
+    
+    // Deposit 버튼 클릭 시 deposit 팝업 열기
+    $('.btn-deposit').on('click', function(e) {
+        e.preventDefault();
+        $('.popup.deposit').show();
+    });
+    
+    // 팝업 닫기 버튼 클릭 시 팝업 닫기
+    $('.popup__close').on('click', function(e) {
+        e.preventDefault();
+        $(this).closest('.popup').hide();
+    });
+    
+    // 팝업 배경 클릭 시 팝업 닫기
+    $('.popup__bg').on('click', function(e) {
+        e.preventDefault();
+        $(this).closest('.popup').hide();
+    });
+    
+    // 로그인 팝업에서 SIGN UP 링크 클릭 시 회원가입 팝업으로 전환
+    $('.popup.login .link-signup').on('click', function(e) {
+        e.preventDefault();
+        $('.popup.login').hide();
+        $('.popup.signup').show();
+    });
+    
+    // 회원가입 팝업에서 LOG IN 링크 클릭 시 로그인 팝업으로 전환
+    $('.popup.signup .link-signup').on('click', function(e) {
+        e.preventDefault();
+        $('.popup.signup').hide();
+        $('.popup.login').show();
+    });
+    
+    // Deposit 팝업 탭 기능
+    $('.deposit__tab button').on('click', function(e) {
+        e.preventDefault();
+        
+        const $clickedBtn = $(this);
+        const tabType = $clickedBtn.data('tab');
+        
+        // 모든 탭 버튼에서 active 클래스 제거
+        $('.deposit__tab button').removeClass('active');
+        
+        // 클릭한 버튼에 active 클래스 추가
+        $clickedBtn.addClass('active');
+        
+        // 모든 탭 내용 숨기기
+        $('.tab-content').hide();
+        
+        // 해당 탭 내용 보이기
+        if (tabType === 'deposit') {
+            $('.deposit-content').show();
+        } else if (tabType === 'withdraw') {
+            $('.withdraw-content').show();
+        }
+    });
+    
+    // ESC 키로 팝업 닫기
+    $(document).on('keydown', function(e) {
+        if (e.key === 'Escape') {
+            $('.popup').hide();
+        }
+    });
 });
