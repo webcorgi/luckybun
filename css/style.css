@@ -1214,6 +1214,10 @@ footer .footer__top {
     min-width:55%;
 }
 
+.mobile__logo {
+    display:none
+}
+
 
 @media screen and (max-width:1400px){
     .visual_contents h2 {
@@ -1258,6 +1262,20 @@ footer .footer__top {
 
 
 @media screen and (max-width:1180px){
+    .mobile__logo {
+        display:block;
+        width:150px;
+    }
+    .dailyperks{
+        position:absolute;
+        top:80px;
+        right:10px;
+    }
+    .contents__header__left .onlineuser{
+        position:absolute;
+        top:50px;
+        right:10px;
+    }
     /* Container 레이아웃 변경 */
     .container {
         flex-direction: column;
@@ -1454,19 +1472,23 @@ footer .footer__top {
     }
     
     .contents__header__left .onlineuser * {
-        font-size: 14px;
+        font-size: 10px;
     }
     
     .contents__header__left .onlineuser img {
-        width: 16px;
+        width: 10px;
     }
     
+    .contents__header__left .onlineuser,
+    .contents__header__left .dailyperks{
+        gap:5px;
+    }
     .contents__header__left .dailyperks span {
-        font-size: 14px;
+        font-size: 10px;
     }
     
     .contents__header__left .dailyperks img {
-        width: 16px;
+        width: 10px;
     }
     
     .contents__header__right {
@@ -1701,5 +1723,8 @@ footer .footer__top {
     .newsdetail__item img {
         max-width:100%;
         margin-bottom:20px;
+    }
+    .mobile__logo {
+        width:100px;
     }
 }
